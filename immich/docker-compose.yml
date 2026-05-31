@@ -32,10 +32,8 @@ services:
     volumes:
       - model-cache:/cache
     env_file:
-      - .stack.env
+      - stack.env
     restart: always
-    healthcheck:
-      disable: false
 
   redis:
     container_name: immich_redis
